@@ -1,0 +1,170 @@
+/* Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+html {
+    scroll-behavior: smooth ;
+}
+:root {
+    --main-color:#009ad8;
+    --main-transition:.5s;
+    
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* Nav Bar*/
+nav{
+    background-color:#1e202b ;
+}
+.logo p{
+    font-size: .6rem;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    font-size: .8rem;
+    display: inline-block;
+    border: 2px solid  transparent;
+    transition: var(--main-transition);
+}
+.navbar-nav .nav-item .active, .navbar-nav .nav-item .nav-link:hover{
+    border-color: var(--main-color);
+    color: var(--main-color) !important;
+}
+
+@media screen and (max-width:991px) {
+    .navbar-nav {
+        background-color: #262936;
+        text-align: center;
+        margin-top: 2rem;
+        border-radius: 8px;
+
+    }
+    .navbar-nav .nav-item{
+        width: 100%;
+    }
+    .navbar-nav .nav-item .nav-link {
+        border: none;
+        
+    }
+    .navbar-nav .nav-item:first-child{
+        border: none;
+    }
+    .navbar-nav .nav-item {
+        padding-block: .7rem;
+        border-top:1px solid rgba(247, 245, 245, 0.2) ;
+    }
+    .navbar-toggler{
+        color: transparent;
+        border-color: transparent;
+        padding: .8rem;
+    }
+    .navbar-toggler:hover{
+        border: 1px solid var(--main-color) !important;
+        border-radius: 50%;
+    }
+}
+
+
+
+/* Search */
+.weather{
+    padding-block: 100px 150px;
+    background: url(../images/831717.jpg);
+    background-color: #1e202b ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.weather .find-input input, footer input{
+    background-color: #1e202b;
+    color: white;
+}
+.weather .find-input input:focus, footer input:focus{
+    outline: none;
+}
+.find-input button, footer button {
+    padding-block: .7rem;
+    top: 5px;
+    right: 5px;
+    padding-inline: 2rem;
+    background-color: var(--main-color);
+}
+.current, .next-days{
+}
+.weather .current ,.next-days{
+    background-color:#323544 ;
+}
+.current .date, .next-days .date{
+    background-color:#2d303d ;
+}
+.date p, #location, .info p , .smalltemp{
+    color:#bfc1c8 ;
+}
+#location{
+    font-size: 1.2rem;
+}
+.current .tempreture{
+    font-size: 5.6rem;
+}
+.status {
+    color: var(--main-color);
+}
+.tomorrow{
+    background-color:#262936 ;
+}
+.tomorrow .date{
+    background-color:#222530 ;
+}
+.next-days .maxtemp{
+    font-size: 1.5rem;
+}
+.next-days .smalltemp{
+    font-size: 1rem;
+}
+/* Footer */
+footer {
+    padding-block: 50px;
+    background-color:#262936 ;
+}
+
+footer .social a {
+    background-color:#1e202b ;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.4;
+    color: var(--main-color);
+
+}
+footer .social a:hover{
+    background-color: var(--main-color);
+    color: white;
+
+}
+footer p{
+    font-size: .8rem;
+    color: #bfc1c8;
+}
